@@ -1,0 +1,22 @@
+#include <cs50.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(void)
+
+{
+float s,c,r;
+
+    do
+    {
+        r = get_float("Dairenin yarıçapını giriniz: ");
+    }
+    while(r < 0);
+
+
+s = 3.14156 * pow(r,2);
+c = (r * 3.14159)*2;
+
+printf("Alan: %f\n", s);
+printf("Çevre: %f\n", c);
+}
